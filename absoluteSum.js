@@ -2,7 +2,9 @@
 // the sum of the absolute value of each element.
 
 const getAbsSum = function(arr) {
-    const result = arr.reduce((el, cur) => (el + cur));
+    const result = arr.reduce((el, cur) => {
+        return Math.abs(el) + Math.abs(cur)
+    }, 0);
     console.log(result);
 };
 
